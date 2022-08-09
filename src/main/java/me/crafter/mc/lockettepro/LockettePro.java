@@ -66,18 +66,10 @@ public class LockettePro extends JavaPlugin {
     private void checkMcVersion() {
     	String[] serverVersion = Bukkit.getBukkitVersion().split("-");
 	    String version = serverVersion[0];
-        if (version.matches("1.18")||version.matches("1.18.1")||version.matches("1.18.2")){
-            plugin.getLogger().info("Compatible server version detected: " + version);
-        } else if (version.matches("1.17")) {
+        if (version.startsWith("1.19") || version.startsWith("1.18") || version.startsWith("1.17") || version.startsWith("1.16")){
             plugin.getLogger().info("Compatible server version detected: " + version);
             is16version = true;
-        } else if (version.matches("1.16") || version.matches("1.16.1") || version.matches("1.16.2") || version.matches("1.16.3") || version.matches("1.16.4") || version.matches("1.16.5")) {
-	    	plugin.getLogger().info("Compatible server version detected: " + version);
-	    	is16version = true;
-	    } else if (version.matches("1.15") || version.matches("1.15.1") || version.matches("1.15.2")) {
-	    	plugin.getLogger().info("Compatible server version detected: " + version);
-	    	is16version = false;
-	    } else if (version.matches("1.14") || version.matches("1.14.1") || version.matches("1.14.2") || version.matches("1.14.3") || version.matches("1.14.4")) {
+	    } else if (version.startsWith("1.15") || version.startsWith("1.14")) {
 	    	plugin.getLogger().info("Compatible server version detected: " + version);
 	    	is16version = false;
 	    } else {
