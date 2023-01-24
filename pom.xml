@@ -6,7 +6,7 @@
 
     <groupId>me.crafter.mc</groupId>
     <artifactId>LockettePro</artifactId>
-    <version>2.12.1</version>
+    <version>2.12.2</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -16,16 +16,12 @@
 
     <repositories>
         <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
-        </repository>
-        <repository>
-            <id>playpro</id>
-            <url>http://maven.playpro.com/</url>
-        </repository>
-        <repository>
             <id>sk89q-repo</id>
             <url>https://maven.enginehub.org/repo/</url>
+        </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
         </repository>
         <repository>
             <id>papermc</id>
@@ -37,7 +33,7 @@
         </repository>
         <repository>
             <id>coreprotect-repo</id>
-            <url>http://maven.playpro.com/</url>
+            <url>https://maven.playpro.com/</url>
         </repository>
     </repositories>
 
@@ -45,7 +41,7 @@
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>1.18.2-R0.1-SNAPSHOT</version>
+            <version>1.19.3-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -63,7 +59,7 @@
         <dependency>
             <groupId>net.coreprotect</groupId>
             <artifactId>coreprotect</artifactId>
-            <version>21.2</version>
+            <version>21.3</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
